@@ -15,10 +15,10 @@ const Login = () => {
       <div className="login-box">
         {/* Add logo above the title */}
         <div className="logo-container">
-          <img src="public/image/icon.png" alt="Logo" className="login-logo" />
+          <img src="image/icon.png" alt="Logo" className="login-logo" />
         </div>
 
-        <h2 className="login-title">Login</h2>
+        <h2 className="login-title">User Login</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label className="form-label">Email</label>

@@ -24,7 +24,7 @@ const Register = () => {
           <img src="/image/icon.png" alt="Logo" className="register-logo" />
         </div>
 
-        <h2 className="register-title">Register</h2>
+        <h2 className="register-title">User Register</h2>
         <form onSubmit={handleSubmit}>
           {/* Name Field */}
           <div className="form-group">
@@ -37,7 +37,7 @@ const Register = () => {
               required
             />
           </div>
-          
+
           {/* Email Field */}
           <div className="form-group">
             <label className="form-label">Email</label>
@@ -74,7 +74,10 @@ const Register = () => {
             />
           </div>
 
-          <button type="submit" className="register-button">
+          <button
+            type="submit"
+            className="register-button"
+          >
             Register
           </button>
         </form>

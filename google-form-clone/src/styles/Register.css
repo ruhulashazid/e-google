@@ -1,9 +1,11 @@
 .register-container {
-    min-height: 100vh;
+    height: 100vh;
+    /* Ensures full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f9fafb;
+    margin: 0 auto;
 }
 
 .register-box {
@@ -13,12 +15,20 @@
     width: 100%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centers the form vertically */
+    align-items: center;
+    /* Centers the form horizontally */
+    min-height: 400px;
+    /* Adjust the height to ensure enough space for centering */
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 24px;
+    margin-bottom: none;
 }
 
 .register-logo {
@@ -34,7 +44,10 @@
 }
 
 .form-group {
-    margin-bottom: 16px;
+    width: 100%;
+    /* Makes the form fields take the full width */
+    margin-bottom: 20px;
+    /* Standard spacing between form elements */
 }
 
 .form-label {
@@ -69,6 +82,8 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 16px;
+    /* Space above the button */
 }
 
 .register-button:hover {

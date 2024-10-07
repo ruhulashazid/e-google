@@ -15,13 +15,20 @@
     width: 100%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* Ensures all items are in a column */
+    justify-content: center;
+    /* Centers the content vertically */
+    align-items: center;
+    /* Centers the content horizontally */
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 6px;
-
+    margin-bottom: 24px;
+    /* Spacing below the logo */
 }
 
 .login-logo {
@@ -37,10 +44,11 @@
     color: #333;
 }
 
-
 .form-group {
-    margin-bottom: 16px;
-    
+    width: 100%;
+    /* Ensures full width for form fields */
+    margin-bottom: 20px;
+    /* Standard spacing between form elements */
 }
 
 .form-label {
@@ -64,7 +72,6 @@
 .form-input:focus {
     border-color: #fc02d2;
 }
-   
 
 .login-button {
     width: 100%;
@@ -76,11 +83,12 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 16px;
+    /* Adds spacing above the button */
 }
 
 .login-button:hover {
     background-color: #fc02d2;
-    
 }
 
 .forgot-password {
